@@ -1,0 +1,16 @@
+{
+  "name": "Better Pixiv",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts":[
+    {
+      "matches": ["https://*.pixiv.net/en/tags*"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Better Pixiv",
+    "default_icon": "icon128.png"
+  }
+}
